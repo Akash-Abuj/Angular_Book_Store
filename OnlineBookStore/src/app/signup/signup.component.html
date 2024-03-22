@@ -1,0 +1,22 @@
+
+<div class="bg-img">
+<h1 style="text-align:center;color: crimson;">User SignUP</h1><hr>
+
+    <form class="container">
+        <br><h4>Enter Name </h4>
+        <input type="text" name="name" class="form-control" [(ngModel)]="model.name"  required pattern="[a-zA-Z ]" onkeydown="return /[a-z]/i.test(event.key)"/>
+        
+        <br><h4>Enter Address </h4>
+        <input type="text" name="addrs" class="form-control" [(ngModel)]="model.addrs"/>
+        <br> <h4>Enter Phone </h4>
+         <input type="number" name="phone" class="form-control" [(ngModel)]="model.phone" required minlength="12"/>
+         <br><h4>Enter Email </h4>
+         <input type="text" id="email" name="email" class="form-control" [(ngModel)]="model.email"/>
+         <br><h4>Enter Password </h4>
+         <input type="text" id="password" name="password" class="form-control" [(ngModel)]="model.password"/>
+       
+         <br><button type="submit" class="btn btn-primary" (click)="usersignup()">User SignUP</button>&nbsp;&nbsp;
+         <br><br><button type="submit" class="btn btn-primary" (click)="userlogin()">Already Have Account</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+    </form>
+</div>

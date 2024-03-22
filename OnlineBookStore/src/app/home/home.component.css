@@ -1,0 +1,21 @@
+.form-control{
+    width:500px;
+    margin:15px 400px;
+
+}
+
+.bg-img {
+    background-image: url("img.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    opacity: 1.0;
+}
+h4{
+    -moz-text-decoration-color: beige;
+}
